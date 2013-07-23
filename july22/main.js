@@ -9,19 +9,21 @@ function colorChange(){
 	}
 	*/
 
-	document.body.style.backgroundColor = randomColor();
+	//document.body.style.backgroundColor = randomColor();
 }
+
 
 function randomColor(){
 	var color = ["cyan", "magenta", "yellow", "black"]; //things inside an array are called elements
 	var colorLength = color.length; //get the length of array
 	var randColor = Math.floor(Math.random()*colorLength); //randomize number
 
-	return color[randColor];
+	//return color[randColor];
 }
 
 
 /*Color Randomizer Function*/
+
 
 function get_random_color() {
     var letters = '0123456789ABCDEF'.split('');
@@ -31,3 +33,30 @@ function get_random_color() {
     }
     return color;
 }
+
+// var text = null;
+// console.log(text.length);
+
+
+
+//method is the samething as a function, just buried within line
+
+
+
+
+
+var kitten = {
+	"eye_color"	: "brown",
+	"fur"		: "long hair",
+	"collar"	: true,
+};
+
+//console.log("collar" in kitten);
+
+if( "fur" in kitten ){
+	console.log("The kitten has " + kitten.fur + " that is a pain to keep brushed.");
+}
+
+
+
+
