@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>Angular Ajax Request</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+    </head>
+    <body>
+
+
+    <div ng-controller="fetchController">
+   <form>
+        <select>
+            <option value="POST">POST</option>
+            <option value="GET">GET</option>
+            <option value="JSONP">JSONP</option>
+        </select>&nbsp;&nbsp;
+
+        <input type="text" value="" style="width: 250px" />&nbsp;&nbsp;
+
+        <input type="submit" ng-click="fetch()" />
+    </form><br><br>
+
+    <pre>http status code: {{status}}</pre>
+    <pre>http response code: {{data}}</pre>
+    <pre>{{widget.url}}</pre>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/ajaxapp.js"></script>
+    </body>
+</html>

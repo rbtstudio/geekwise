@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Bootstrap 101 Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+
+        <div ng-controller="AvengersController">
+            <input type="text" ng-model="search.name">
+            <table>
+                <tr ng-repeat="actor in avengers.cast | filter: search | orderBy: 'name' | limitTo: 5">
+                    <td>{{ actor.name }}</td>
+                    <td>{{ actor.character }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

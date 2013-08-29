@@ -1,0 +1,14 @@
+[
+	{
+		"title": "My First Project",
+		"description": "A fun and easy way to record your meals.",
+		"duedate": "09-01-2013",
+		"team": "The Frozen Yogurts"
+	},
+	{
+		"title": "My Second Project",
+		"description": "Not that fun and easy",
+		"duedate": "08-08-2013",
+		"team": "RedZero Team"
+	}
+]

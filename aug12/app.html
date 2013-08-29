@@ -1,0 +1,10 @@
+<h1>{{model.message}}</h1>
+[<a href="#/add">add</a>]
+
+<div ng-repeat="project in projects">
+	<ul>
+		<li><h4>{{project.title}}</h4></li>
+		<li><p>{{project.description}}</p></li>
+	</ul>
+	[<a href="#/edit">edit</a>] [<a href="#/delete">delete</a>]
+</div>

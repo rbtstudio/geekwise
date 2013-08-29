@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="projMan">
+    <head>
+        <title>ProjectManager</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+
+        <div ng-controller="appController">
+            <h1>Project Manager</h1>
+            [<a href="#/">home</a>]
+            <div ng-view></div>
+        </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="../js/projMan.js"></script>
+    <script src="../js/controllers.js"></script>
+    </body>
+</html>
